@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MS-shop</title>
+    <title>Product | info</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,8 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../src/main.css" />
   </head>
   <body class="w-full h-lvh relative">
     <div class="bg-base-300 sticky top-0 z-50" id="navbar__background">
@@ -123,59 +123,6 @@
       </div>
     </div>
 
-    <div class="py-5 mt-5 bg-base-300">
-      <div
-        class="container mx-auto md:px-20 sm:px-10 flex justify-between items-center gap-6"
-      >
-        <div class="carousel w-full h-full rounded-2xl">
-          <div
-            id="item1"
-            class="carousel-item w-full h-[260px] overflow-hidden"
-          >
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-              class="w-full"
-            />
-          </div>
-          <div id="item2" class="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-              class="w-full"
-            />
-          </div>
-          <div id="item3" class="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-              class="w-full"
-            />
-          </div>
-          <div id="item4" class="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-              class="w-full"
-            />
-          </div>
-        </div>
-
-        <div class="card w-full h-[260px] bg-base-100 shadow-xl image-full z-0">
-          <figure class="w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              width="800px"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Halol mudatli to'lovga</h2>
-            <p>faqat siz uchun eng qulay narxlar faqat bizda</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">ko'proq</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- overlay -->
     <div
       id="overlay"
@@ -190,59 +137,15 @@
     </div>
     <!-- MAIN SECTION -->
     <main class="mt-[25px] container mx-auto md:px-20 sm:px-10">
-      <div class="flex items-center justify-between">
-        <h2 class="text-4xl">Eng Ko'p Sotiladigan mahsulotlar</h2>
-        <p>
-          <a href="#" class="text-primary font-semibold text-lg"
-            >hammasini ko'rish</a
-          >
-        </p>
+      <div>
+        <div class="w-[60px]">
+          <img src="../img/img.jpg" alt="" class="w-[330px]" />
+        </div>
       </div>
-
-      <ul class="mt-8 flex flex-wrap justify-between" id="product-list">
-        <template id="most-popular">
-          <li class="w-[22.5%] mb-4">
-            <div
-              class="my-card card w-full bg-base-100 h-[350px] shadow-xl overflow-hidden hover:cursor-pointer"
-            >
-              <figure class="">
-                <img
-                  class="product-img w-[130px] object-cover transition-transform duration-300"
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="product-title font-bold text-primary">Shoes!</h2>
-                <p class="w-full product-description font-bold">
-                  If a dog chews shoes whose shoes does he choose?
-                </p>
-                <div class="flex items-center justify-between">
-                  <div>
-                    <span
-                      class="old-price text-gray-600 text-sm line-through block"
-                      >21.000 sum</span
-                    >
-                    <span class="text-md font-bold price">18.000 sum</span>
-                  </div>
-                  <span class="badge badge-secondary skidka">21%</span>
-                </div>
-                <div class="card-actions">
-                  <a
-                    href="./pages/infoProduct.html"
-                    class="w-full border border-primary text-center px-4 rounded-3xl hover:bg-inherit transition-all hover:text-primary cursor-pointer py-1 my-link font-semibold"
-                    >shop now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </li>
-        </template>
-      </ul>
     </main>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/request.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/request.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
