@@ -12,9 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/main.css" />
   </head>
   <body class="w-full h-lvh relative">
-    <div class="bg-base-300 relative sticky top-0 z-50" id="navbar__background">
+    <div class="bg-base-300 sticky top-0 z-50" id="navbar__background">
       <div class="container mx-auto md:px-20 sm:px-10">
         <nav class="flex items-center justify-between">
           <div>
@@ -201,10 +202,12 @@
       <ul class="mt-8 flex flex-wrap justify-between" id="product-list">
         <template id="most-popular">
           <li class="w-[22.5%] mb-4">
-            <div class="card w-full bg-base-100 h-[350px] shadow-xl">
+            <div
+              class="my-card card w-full bg-base-100 h-[350px] shadow-xl overflow-hidden hover:cursor-pointer"
+            >
               <figure class="">
                 <img
-                  class="product-img w-[130px] object-cover"
+                  class="product-img w-[130px] object-cover transition-transform duration-300"
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                   alt="Shoes"
                 />
@@ -212,16 +215,25 @@
               <div class="card-body">
                 <h2 class="product-title font-bold text-primary">
                   Shoes!
-                  <div class="badge badge-secondary">NEW</div>
+                  <div class="badge badge-secondary skidka">21%</div>
                 </h2>
-                <p class="w-full product-description">
+                <p class="w-full product-description font-bold">
                   If a dog chews shoes whose shoes does he choose?
                 </p>
-                <div class="card-actions justify-between items-center">
-                  <span class="reyting">4.5/5</span>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span
+                      class="old-price text-gray-600 text-sm line-through block"
+                      >21.000 sum</span
+                    >
+                    <span class="text-md font-bold">18.000 sum</span>
+                  </div>
+                  <span class="badge badge-secondary skidka">21%</span>
+                </div>
+                <div class="card-actions">
                   <a
                     href="#"
-                    class="border border-primary px-4 rounded-3xl bg-primary hover:bg-inherit hover:text-primary cursor-pointer py-1 my-link font-semibold"
+                    class="w-full border border-primary text-center px-4 rounded-3xl hover:bg-inherit transition-all hover:text-primary cursor-pointer py-1 my-link font-semibold"
                     >shop now</a
                   >
                 </div>

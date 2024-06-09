@@ -8,10 +8,15 @@ const upDateUi = (data) => {
     const productTitle = mostPopularTemplate.querySelector(".product-title");
     const productImg = mostPopularTemplate.querySelector(".product-img");
     const myLink = mostPopularTemplate.querySelector(".my-link");
+    const sale = mostPopularTemplate.querySelector(".skidka");
+    const reyting = mostPopularTemplate.querySelector(".reyting");
     const productDescription = mostPopularTemplate.querySelector(
       ".product-description"
     );
     productTitle.textContent = product.title;
+    productDescription.textContent = product.category;
+    sale.textContent = "5";
+
     productImg.src = product.thumbnail;
     productList.appendChild(mostPopularTemplate);
   });
