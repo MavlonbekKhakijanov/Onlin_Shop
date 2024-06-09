@@ -10,12 +10,21 @@ const upDateUi = (data) => {
     const myLink = mostPopularTemplate.querySelector(".my-link");
     const sale = mostPopularTemplate.querySelector(".skidka");
     const reyting = mostPopularTemplate.querySelector(".reyting");
+    const oldPrice = mostPopularTemplate.querySelector(".old-price");
+    const price = mostPopularTemplate.querySelector(".price");
     const productDescription = mostPopularTemplate.querySelector(
       ".product-description"
     );
+
+    oldPrice.textContent = `${product.price}$`;
+
+    sale.textContent = `${Math.floor(product.discountPercentage)}%`;
+    price.textContent = `${(
+      product.price -
+      (product.price * product.discountPercentage) / 100
+    ).toFixed(2)}$`;
     productTitle.textContent = product.title;
     productDescription.textContent = product.category;
-    sale.textContent = "5";
 
     productImg.src = product.thumbnail;
     productList.appendChild(mostPopularTemplate);
