@@ -12,6 +12,7 @@ const upDateUi = (data) => {
       ".product-description"
     );
     productTitle.textContent = product.title;
+    productImg.src = product.thumbnail;
     productList.appendChild(mostPopularTemplate);
   });
 
